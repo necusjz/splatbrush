@@ -1,7 +1,7 @@
 # Splatoon Brush
 [![Build Status](https://github.com/necusjz/splatbrush/actions/workflows/main.yaml/badge.svg)](https://github.com/necusjz/splatbrush/actions/workflows/main.yaml)
 
-Automate plotting posts in [Splatoon](https://splatoonwiki.org/wiki/Splatoon) based on BlueZ, and optimize its efficiency via Traveling Salesman Problem (TSP).
+Automate painting posts in [Splatoon](https://splatoonwiki.org/wiki/Splatoon) based on BlueZ, and optimize its efficiency via Traveling Salesman Problem (TSP).
 
 The mailbox is a service in the Splatoon hub that allows players to create drawings and share them via social media. The drawings may be viewable by other players and may be displayed as signs or graffiti in the hub and in various stages in multiplayer matches.
 
@@ -27,12 +27,12 @@ If you're using macOS or Windows, an external Bluetooth adapter is needed and pl
 After that, a Vagrantfile will be generated and the current directory is the location where you run any Vagrant command.
 
 ## Usage
-Generate the macro represents the actual plotting process:
+Generate the macro represents the actual painting process:
  ```bash
  $ splatbrush macro -i <image>
  ```
 
-Wirelessly plotting the post on switch console or another window:
+Wirelessly painting the post on switch console or another window:
  ```bash
  $ splatbrush start -i <macro> [--dry-run]
  ```
@@ -53,7 +53,7 @@ $ vagrant destroy
 ```
 
 ## Pathing
-We optimize pathing efficiency by treating the plotting process as a variant of [Traveling Salesman Problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem) (TSP). It's a classic optimization problem where the goal is to find the shortest possible route that visits a given set of cities and returns to the original city.
+We optimize pathing efficiency by treating the painting process as a variant of [Traveling Salesman Problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem) (TSP). It's a classic optimization problem where the goal is to find the shortest possible route that visits a given set of cities and returns to the original city.
 
 If you want to solve it without returning to the start, it essentially becomes the problem of finding a [Hamiltonian Path](https://en.wikipedia.org/wiki/Hamiltonian_path), which visits each city exactly once. To further scale down, we divide the image into 8x3 parts (with _patch size of 40_) and label the contiguous region as a city.
 

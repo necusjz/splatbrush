@@ -15,7 +15,7 @@ command_map = {
 }
 
 
-def start_plotting(macro_path, is_dry_run):
+def start_painting(macro_path, is_dry_run):
     with open(macro_path, "r", encoding="utf-8") as fp:
         commands = fp.readlines()
 

@@ -54,14 +54,14 @@ def manh(p1, p2):
     return sum(map(abs, get_delta(p1, p2)))
 
 
-def goto_next(p1, p2, plot=True):
+def goto_next(p1, p2, paint=True):
     commands = []
     delta_x, delta_y = get_delta(p1, p2)
 
     commands += ["u", "d"][int(delta_x > 0)] * abs(delta_x)
     commands += ["l", "r"][int(delta_y > 0)] * abs(delta_y)
 
-    return commands + ["a"] if plot else commands
+    return commands + ["a"] if paint else commands
 
 
 def calculate_distance_matrix(endpoints):
@@ -84,7 +84,7 @@ def pathing(matrix):
         if np.all(submatrix == 0):
             continue
 
-        commands += goto_next(current, offset, plot=False)
+        commands += goto_next(current, offset, paint=False)
         current = offset
 
         routes = label_routes(submatrix, offset)
