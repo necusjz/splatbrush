@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "splatbot"
+name = "splatbrush"
 dynamic = ["version"]
 description = "Automate plotting posts in Splatoon based on BlueZ, and optimize its efficiency via Traveling Salesman Problem (TSP)."
 authors = [{name = "necusjz", email = "necusjz@gmail.com"}]
@@ -39,15 +39,15 @@ dev = [
 ]
 
 [project.scripts]
-splatbot = "splatbot.cli:main"
+splatbrush = "splatbrush.cli:main"
 
 [project.urls]
-Changelog = "https://github.com/necusjz/splatbot/blob/main/CHANGELOG.md"
-Repository = "https://github.com/necusjz/splatbot"
+Repository = "https://github.com/necusjz/splatbrush"
+Changelog = "https://github.com/necusjz/splatbrush/blob/main/CHANGELOG.md"
 
 [tool.hatch.build]
-packages = ["src/splatbot"]
+packages = ["src/splatbrush"]
 include = ["scripts", "tests", "vagrant"]
 
 [tool.hatch.version]
-path = "src/splatbot/__init__.py"
+path = "src/splatbrush/__init__.py"
