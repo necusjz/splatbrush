@@ -30,6 +30,7 @@ jobs:
         task:
           - name: Test
             run: pytest -s -v --color=yes tests/
+
         include:
           - python: "3.11"
             task:

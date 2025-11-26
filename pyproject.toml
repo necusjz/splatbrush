@@ -42,8 +42,8 @@ dev = [
 splatbrush = "splatbrush.cli:main"
 
 [project.urls]
-Repository = "https://github.com/necusjz/splatbrush"
 Changelog = "https://github.com/necusjz/splatbrush/blob/main/CHANGELOG.md"
+Repository = "https://github.com/necusjz/splatbrush"
 
 [tool.hatch.build]
 packages = ["src/splatbrush"]
