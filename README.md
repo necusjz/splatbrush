@@ -1,5 +1,5 @@
 # Splatoon Brush
-[![Build Status](https://github.com/necusjz/splatbrush/actions/workflows/main.yaml/badge.svg)](https://github.com/necusjz/splatbrush/actions/workflows/main.yaml)
+[![Build Status](https://github.com/necusjz/splatbrush/actions/workflows/ci.yaml/badge.svg)](https://github.com/necusjz/splatbrush/actions/workflows/ci.yaml)
 
 Automate painting posts in [Splatoon](https://splatoonwiki.org/wiki/Splatoon) based on BlueZ, and optimize its efficiency via Traveling Salesman Problem (TSP).
 
