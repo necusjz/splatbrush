@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "splatbrush"
 dynamic = ["version"]
-description = "Automate plotting posts in Splatoon based on BlueZ, and optimize its efficiency via Traveling Salesman Problem (TSP)."
+description = "Automate painting posts in Splatoon based on BlueZ, and optimize its efficiency via Traveling Salesman Problem (TSP)."
 authors = [{name = "necusjz", email = "necusjz@gmail.com"}]
 requires-python = ">=3.9,<3.12"
 readme = "README.md"

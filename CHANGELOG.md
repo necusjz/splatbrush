@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [2.0.0] - 2025-11-27
-- Rename project from `splatbot` to `splatbrush`.
+- Renamed project from splatbot to splatbrush.
 
 ## [1.1.0] - 2025-05-27
 - Migrated from pip + pdm to uv + hatchling.
