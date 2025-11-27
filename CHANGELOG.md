@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.1] - 2025-11-28
+- Fixed bugs, improved performance, explored the edges of the known universe.
+
 ## [2.0.0] - 2025-11-27
 - Renamed project from splatbot to splatbrush.
 
