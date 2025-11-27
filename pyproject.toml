@@ -47,7 +47,6 @@ Repository = "https://github.com/necusjz/splatbrush"
 
 [tool.hatch.build]
 packages = ["src/splatbrush"]
-include = ["scripts", "tests", "vagrant"]
 
 [tool.hatch.version]
 path = "src/splatbrush/__init__.py"
